@@ -141,12 +141,12 @@ span {
 }
 #span {
     position: absolute;
-    top: 124%;
+    top: 130%;
     left: 0%;
     transform: translate(0, 0); /* No need for translate, as it's positioned at the bottom right */
     text-decoration: none;
     font-size: 18px; /* Slightly larger font size for better readability */
-   font-family: 'abel',sans-serif; /* Clean, modern font */
+    font-family: 'abel',sans-serif; /* Clean, modern font */
     color: black; /* Text color */
     background-color: white; /* Transparent background */
     padding: 10px 8px; /* Simple padding for spacing */
@@ -157,7 +157,7 @@ span {
 }
 hr {
     position: absolute;
-    top: 123%; /* Position the horizontal line above the text */
+    top: 129%; /* Position the horizontal line above the text */
     left: 150px;
     width: 80%; /* Adjust the width of the horizontal line */
     border: 0;
