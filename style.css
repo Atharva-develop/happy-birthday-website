@@ -1,0 +1,166 @@
+/* All imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Oi&family=Oswald:wght@200..700&family=Playwrite+PT+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Oi&family=Oswald:wght@200..700&family=Playwrite+PT+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+/* Main style */
+body {
+    margin: 0;
+    background: #020202;
+    z-index: 3;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: none;
+    width: 500px;
+}
+
+canvas {
+    height: 1250px;
+    width: 100vw;
+    z-index: 2;
+    background-color: transparent;
+    margin-top: -30px;
+}
+
+#headingcontainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    position: absolute;
+    align-items: center;
+    z-index: 4;
+    margin-top: 30px;
+}
+
+h3 {
+    position: absolute;
+    top: 1020px;
+    left: 20px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#popperimg {
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin-top: -1300px;
+}
+
+#sirimage {
+    z-index: 10;
+    width: 20vw;
+    position: absolute;
+    margin: 120px 39%;
+    opacity: 0;
+}
+
+#cake {
+    z-index: 10;
+    width: 30vw;
+    position: absolute;
+    margin: 400px 33%;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        left: 10%;
+    }
+
+    h3 {
+        top: 80%;
+        font-size: 1rem;
+        left: 10px;
+        right: 10px;
+    }
+
+    canvas {
+        height: 1000px;
+    }
+
+    #sirimage, #cake {
+        width: 50vw;
+        margin: 80px 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        left: 10px;
+        z-index: 4;
+    }
+
+    h3 {
+        top: 70%;
+        font-size: 0.8rem;
+        left: 5px;
+        right: 5px;
+    }
+
+    canvas {
+        height: 600px;
+    }
+
+    #sirimage, #cake {
+        width: 60vw;
+        margin: 60px 20%;
+    }
+}
+
+.animate-me {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.start-animation {
+    opacity: 1;
+    transform: scale(1);
+}
+
+span {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    border-radius: 30%;
+    padding: 10px;
+}
+#span {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    transform: translate(0, 0); /* No need for translate, as it's positioned at the bottom right */
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    color: black; /* Text color */
+    background-color: white; /* Transparent background */
+    padding: 10px 8px; /* Simple padding for spacing */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: none; /* No shadow */
+    width: 98%;
+    align-items: center;
+}
+hr {
+    position: absolute;
+    top: 120%; /* Position the horizontal line above the text */
+    left: 150px;
+    width: 80%; /* Adjust the width of the horizontal line */
+    border: 0;
+    border-top: 2px solid white; /* White horizontal line */
+    z-index: 0; /* Ensure the horizontal line is below the text */
+}
